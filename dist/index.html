@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Glassmorphism to do list</title>
+</head>
+<body>
+        
+
+
+ <div class="img__task__backgroud">
+    <img class="leaft" src="img/leaf.png" alt=""> 
+</div>   
+    
+<div class="main__content">
+    <aside class="aside__info">
+        <div class="img_background">
+            <img class="shape" src="img/pensil.png" alt="">
+        </div>
+
+            <div class="card">
+                <h2 class="card-title">Y personal To Do List</h2>
+                <p>A modern CSS UI library based on the glassmorphism design principles that will help you quickly design and build beautiful websites and applications.</p>
+                <a href="">https://github.com/brolo1313</a>
+        </div>
+
+        <div class="date__wrapper">
+            <div class="date__now">
+                    Тут будет дата
+            </div>
+            <hr>
+            <div class="calendar__block">
+                а здесь календарь,если повезет
+            </div>
+        </div>
+    </aside> 
+    
+    
+<!-- ЗАДАЧИ -->
+
+    <section class="task__wrapper">   
+        <div class="task__content">
+            <div class="add__task">
+                <span class="span__task">New task</span>
+                <form class="wrapper__int__Btn">
+                    <input  class="text__task" id="task__value" type="text" >
+                    <button class="btn__add" id="abbTask" type="button" >+add</button>
+                </form> 
+            </div>
+            
+            <div class="active__task">
+                <span class="span__task">Active task</span>
+                <ul class="task__list">
+                    
+                    
+                    <!-- <li>
+                        <button class="btn__task check" >
+                            <img src="img/check.png" alt="">
+                        </button>
+                        <label>1225521asddsadasdas</label>
+                        <input type="text">
+                        <button class="btn__task edit">
+                            <img src="img/edit.png" alt="">
+                        </button>
+                        <button class="btn__task delete">
+                            <img src="img/delete.png" alt="">
+                        </button>
+                    </li> -->
+                    
+                    
+                </ul>
+            </div>
+
+            <div class="finished__task">
+                <span class="span__task">Finished  task</span>
+                <ul class="task__finished">
+                    
+                </ul>
+            </div>
+        </div>
+         
+            
+    </section>
+     
+</div>
+
+
+
+
+<script src="js/script.min.js"></script>
+</body>
+</html>

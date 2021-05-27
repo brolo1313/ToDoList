@@ -1,0 +1,246 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 4.5rem;
+    margin: 0;
+    background: #edc0bf;
+    background: linear-gradient(90deg, #edc0bf 0,#c4caef 58%);
+    font-family: 'Inter', sans-serif;
+}
+
+
+.main__content{
+    display: flex;
+    
+}
+
+.card,
+.date__wrapper,
+.task__wrapper {
+    max-width: 400px;
+    width: 400px;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    margin: 20px 0px 0px 20px;
+
+    background: rgba(255, 255, 255, .7);
+    -webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(5px);
+	
+  }
+  
+  .card-title {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+  }
+  
+  p, a {
+    font-size: 1rem;
+  }
+  
+  a {
+    color: #4d4ae8;
+    text-decoration: none;
+  }
+
+
+
+  .shape {
+    position: absolute;
+    width: 300px;
+    
+    top: .5rem;
+    left: .5rem;
+
+  }
+
+
+  .card-title{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color : #7e5f3f;
+  }
+
+
+//   БЛОК С ЗАДАНИЯМИ
+
+.task__wrapper{
+    position: relative;
+   
+    margin: 20px 20px 0px 20px;
+
+    
+}
+
+.leaft{
+    position:absolute;
+    left: 600px;
+    top: 10px;
+    width: 200px;
+   
+}
+
+
+.active__task {
+  margin-top: 15px;
+}
+
+.task__list > li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid black;
+
+  
+
+  margin-top: 15px;
+}
+
+.task__list > li.editMode > input[type=text]{
+  padding: 4px 0 4px 5px;
+}
+
+ul > li > button:nth-child(5){
+  margin-left: 10px;
+}
+
+
+span  {
+    font-family: 'Montserrat Alternates', sans-serif;
+   
+}
+
+.task__todo{
+  width: 250px;
+ 
+  padding: 5px 0 5px 5px;
+  word-break: break-word;
+}
+
+.span__task{
+    width: 100%;
+    color: #d87b08;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+.wrapper__int__Btn{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 15px;
+}
+
+
+.text__task{
+    width:70%;
+    height:30px;
+
+    border-radius: 10px;
+
+    text-indent: 6px;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+   
+
+}
+
+.btn__add{
+    width: 25%;
+    height: 30px;
+    background: skyblue;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+  transition: all .4s ease-in-out;
+}
+
+button.btn__add:hover {
+  filter: drop-shadow(2px 4px 6px black);
+  transition: all .5s ease-in-out;
+}
+
+
+// активные задачи
+
+.btn__task{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  opacity: .5;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+
+}
+
+.checkbox {
+  max-height: 24px;
+  max-width: 24px;
+}
+
+.edit{ 
+  margin-left: auto;
+}
+
+
+ul > li > input[type=text]{
+ display:none;
+ width: 250px;
+}
+
+
+ul li.editMode input[type=text] {
+  display: block;
+  
+
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px  solid  skyblue;
+
+  padding: 5px 0px 5px 5px;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+
+
+
+.finished__task{
+  margin-top: 15px;
+}
+
+
+.task__finished > li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+
+
+
+
+}
+
+.task__finished label {
+  text-decoration: line-through;
+  color: lightgray;
+  padding: 5px 0 5px 5px;
+}
