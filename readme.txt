@@ -1,4 +1,5 @@
-переносим src gulp.js packaje.json на новый проект 
-там делае npm i 
+1)Сборка на Gulp.
+2)CSS/SASS/JS.
 
-и все готово!
+
+ 
